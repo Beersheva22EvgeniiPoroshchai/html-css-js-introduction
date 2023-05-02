@@ -1,0 +1,35 @@
+.link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(131, 131, 20);
+   }
+
+
+.link-image {
+    width: 80px;
+    vertical-align: middle;
+    margin: 10px;
+    border-radius: 15%;
+}
+
+.link-title {
+    font-size: 1.5em;
+    width: 60px; display:
+    inline-block; text-align: left;
+    cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
