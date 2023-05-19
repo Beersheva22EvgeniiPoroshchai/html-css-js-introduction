@@ -8,6 +8,7 @@ const squareElement = document.getElementById("square-id");
 const resultMessageElement = document.getElementById("game-result");
 const playAgainButtonElement = document.getElementById("play-again-id");
 //global variables
+
 let count = 0;
 //functions
 function game() {
@@ -23,6 +24,7 @@ function game() {
         inputElement.value = '';
     }
 }
+
 
 
 function startGame() {

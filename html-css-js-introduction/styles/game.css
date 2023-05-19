@@ -4,13 +4,14 @@ body {
     height: 50vh;
     justify-content: center;
     align-items: center;
-
 }
+
 
 .input-group {
     display: flex;
     flex-direction: row;
 }
+
 
 #square-id {
     margin-top: 5vh;
