@@ -1,0 +1,53 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5ecd7;
+
+}
+
+#input-id {
+    width: 12vw;;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.rect{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #51adcf;
+    margin: 0.4vh;
+    border-radius: 15%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+.title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
+    color: #0278ae;
+    
+}
+
+
+#game-result {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #EF5F9A;
+}

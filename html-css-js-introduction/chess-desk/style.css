@@ -1,0 +1,41 @@
+
+body {
+margin-top: 100px;
+display: flex;
+justify-content: center;
+
+}
+
+
+.container {
+display: flex;
+flex-wrap: wrap;
+width: 50vw;
+height: 50vw;
+border: 2px solid black;
+}
+
+
+.black {
+    background-color: black;
+    
+    }
+
+
+.white {
+ 
+    background-color: white;
+    
+  }
+
+
+
+.cell {
+    width : 12.5%;
+    height: 12.5%;
+}
+ 
+#first {
+    background-color: aqua;
+}
+

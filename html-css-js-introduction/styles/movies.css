@@ -1,0 +1,283 @@
+@font-face {
+    font-family: airstream;
+    src: url("../fonts/Airstream-webfont.svg");
+    src: url("../fonts/Airstream-webfont.woff");
+}
+
+
+@font-face {
+    font-family: lakeshore;
+    src: url("../fonts/LAKESHOR-webfont.svg");
+    src: url("../fonts/LAKESHOR-webfont.woff");
+}
+
+
+:root {
+    --thumbnails-image-width: 20vw;
+    --thumbnails-image-height: calc(var(--thumbnails-image-width)*0.6);
+    --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.3);
+    
+    
+} 
+    
+
+body {
+display: flex;
+flex-direction: column;
+background-color:#455d7a ;
+margin: 0;
+}
+
+
+
+header {
+text-align: center;
+background-color:#f95959;
+position: fixed;
+display: flex;
+left: 0;
+right: 0;
+justify-content: center;
+box-shadow: 0 1px 7px 1px black;
+
+}
+
+.logo {
+    font-size: 2.1em;
+    color:#233142;
+    margin: 1.5vh;
+    font-family: lakeshore;
+    
+    text-shadow: 2px 1px 2px black, 0 0 25px #455d7a, 0 0 5px #f95959;
+    /* text-transform: uppercase;
+    letter-spacing: 0.5em; */
+    
+    }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details-section {
+margin-top: 6vh;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 0.5s;
+}
+
+
+.details-image {
+width: 65vw;
+height: 52vw;
+border-radius: 15%;
+margin: auto;
+margin-top: 6vh;
+display: block;
+
+box-shadow: 3px 9px 6px 0px black;
+
+}
+
+
+
+.details-title {
+    
+    font-style: italic;
+    font-size: 2.4em;
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+    font-family: airstream;
+    
+    text-shadow: 1px 1px 2px #f95959, 0 0 25px #455d7a, 0 0 5px black;
+}
+
+.thumbnails-list {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+max-height: 35vh;
+overflow-y: auto;
+justify-content: space-around;
+padding-left: 20px;
+padding-right: 20px;
+margin-top: 10vh;
+
+
+}
+
+
+.thumbnails-item {
+    border: solid 1px black;
+    border-radius: 18%;
+    max-width: var(--thumbnails-image-width);
+    min-width: var(--thumbnails-image-width);
+    min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
+    margin-top: 3vh;
+    overflow: hidden;
+    font-size: 0.75em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+
+.thumbnails-ancor {
+    text-decoration: none;
+}
+
+
+
+.thumbnails-item:hover {
+border-color: #f95959;
+transform: scale(1.15);
+transition: 0.15s;
+
+}
+
+
+
+
+
+.thumbnails-image {
+    width: var(--thumbnails-image-width);
+    height: var(--thumbnails-image-height);
+    display: block;
+    
+}
+
+.thumbnails-title {
+    display: block;
+    text-align: center;
+    background-color: #233142;
+    color: #96A8D5;
+    height: var(--thumbnails-title-height);
+    
+
+}
+
+
+/* .details-container {
+    position: relative;
+} */
+
+.hidden .thumbnails-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15vh;
+   
+}
+
+
+.hidden .details-section {
+    display: none;
+}
+
+.hide-button {
+    font-size: 1em;
+    position: absolute;
+    top: 13vh;
+    right: 20vw;
+    border-radius: 30%;
+    border-color: #233142;
+    background-color: transparent;
+    color: #f95959;
+
+
+}
+
+
+.is-point {
+    transform: scale(0);
+    transition: 0s;
+
+}
+
+
+
+@media (min-width: 650px) {
+    
+    :root {
+        --thumbnails-image-width: 15vw;
+        --thumbnails-image-height: calc(var(--thumbnails-image-width)*0.75);
+        --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.25);
+    } 
+
+.thumbnails-list {
+    
+    flex-wrap: nowrap;
+    max-height: 80vh;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 3vw;
+    
+
+    margin-top: 18vh;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+
+main {
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+
+
+.details-image {
+    width: 47vw;
+    height: 30vw;
+    margin-top: 7vw;
+}
+
+.details-section {
+    margin: auto;
+    
+}
+
+body {
+    overflow: hidden;
+}
+
+.details-title {
+    font-size: 2.5em;
+    margin: auto;
+}
+
+
+.hide-button {
+    font-size: 1.1em;
+    top: 23vh;
+    right: 17vw;
+    border-radius: 40%;
+   
+}
+
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+
+.details-image {
+    width: 45vw;
+    height: 37vw;
+}
+
+
+html {
+    font-size: 1.2rem;
+}
+
+
+
+
+} 
+

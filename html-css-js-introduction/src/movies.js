@@ -1,3 +1,5 @@
+import moviesObj from '../movies.json' assert {type: 'json'};
+
 const detailsImageElement = document.querySelector(".details-image");
 const detailsTitleElement = document.querySelector(".details-title");
 const thumbnailsAnchors = document.querySelectorAll(".thumbnails-ancor");
@@ -8,6 +10,9 @@ const mainSection = document.querySelector("main")
 const HIDDEN = "hidden";
 const POINT_CLASS = "is-point";
 
+
+console.log(moviesObj.httpPrefix);
+
 // for (let i = 0; i < thumbnailsAnchors.length; i++) {
 //     thumbnailsAnchors[i].addEventListener("click", function() {
 //         setDetails(i); 
@@ -15,8 +20,13 @@ const POINT_CLASS = "is-point";
 // })
 // }
 
+
 thumbnailsAnchors.forEach(anchor => anchor.addEventListener('click',
 setDetails.bind(undefined, anchor)))
+
+
+
+
 
 
 function setDetails(indexAnchor) {
@@ -37,8 +47,6 @@ function showDetails() {
 
 
     })
-
-
 }
 
 function hideDetails() {
